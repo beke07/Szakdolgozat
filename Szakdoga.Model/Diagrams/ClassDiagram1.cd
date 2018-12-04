@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Szakdoga.Model.User">
+    <Position X="6.25" Y="2.75" Width="3" />
+    <AssociationLine Name="Boss" Type="Szakdoga.Model.User" ManuallyRouted="true">
+      <Path>
+        <Point X="7.314" Y="6.098" />
+        <Point X="7.314" Y="6.588" />
+        <Point X="8.207" Y="6.588" />
+        <Point X="8.207" Y="6.098" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.204" Y="0.581" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Employees" Type="Szakdoga.Model.User" ManuallyRouted="true">
+      <Path>
+        <Point X="7.314" Y="2.75" />
+        <Point X="7.314" Y="2.323" />
+        <Point X="8.207" Y="2.323" />
+        <Point X="8.207" Y="2.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.006" Y="0.56" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAEgAACAAAAAAQQAAAAAACAACAAAABAAICAAAAQg=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Boss" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Employees" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

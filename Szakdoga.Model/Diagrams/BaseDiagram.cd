@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Szakdoga.Model.Project">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <AssociationLine Name="Tasks" Type="Szakdoga.Model.ProjectTask" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.25" Y="5.625" />
+        <Point X="9.125" Y="5.625" />
+        <Point X="9.125" Y="6.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.978" Y="0.741" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAkAAAAAAAAAAIAEAAAAAAAEoAAAAAAA=</HashCode>
+      <FileName>Project.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Tasks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Szakdoga.Model.ProjectTask">
+    <Position X="8.25" Y="6.25" Width="1.5" />
+    <AssociationLine Name="TaskActivities" Type="Szakdoga.Model.TaskActivity" FixedToPoint="true">
+      <Path>
+        <Point X="9.75" Y="7.187" />
+        <Point X="11.25" Y="7.187" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.107" Y="0.076" Height="0.182" Width="1.129" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAADAAAAIgAEAAAAAACAAAJAAAAAAQAAAAAgAAAAA=</HashCode>
+      <FileName>ProjectTask.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="TaskActivities" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Szakdoga.Model.User">
+    <Position X="4.75" Y="3.5" Width="2.25" />
+    <AssociationLine Name="Tasks" Type="Szakdoga.Model.ProjectTask" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="5.625" />
+        <Point X="8.812" Y="5.625" />
+        <Point X="8.812" Y="6.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.027" Y="0.686" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="PasswordHelper" Type="Szakdoga.Model.ComplexTypes.PasswordHelper">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.06" Y="0.11" Height="0.182" Width="1.288" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAEgAACAAAAAAQQAAAAAACAACAAAABAAICAAAAQg=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Rank" />
+      <Property Name="PasswordHelper" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Tasks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Szakdoga.Model.JoiningClasses.ProjectWorker">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <AssociationLine Name="Worker" Type="Szakdoga.Model.User" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="4.125" />
+        <Point X="7.289" Y="4.125" />
+        <Point X="7.289" Y="4.125" />
+        <Point X="7" Y="4.125" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Project" Type="Szakdoga.Model.Project" FixedFromPoint="true">
+      <Path>
+        <Point X="9.75" Y="4.125" />
+        <Point X="11.25" Y="4.125" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.068" Y="0.141" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAACAAABAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>JoiningClasses\ProjectWorker.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Worker" />
+      <Property Name="Project" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Szakdoga.Model.TaskActivity">
+    <Position X="11.25" Y="6.25" Width="1.5" />
+    <AssociationLine Name="Activity" Type="Szakdoga.Model.Activity">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.098" Y="0.132" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAwAAAAAAAAAAAAAAgAAAABAEAAAEAAAAA=</HashCode>
+      <FileName>TaskActivity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Activity" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Szakdoga.Model.Rank">
+    <Position X="6" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rank.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Szakdoga.Model.Activity">
+    <Position X="11.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Activity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Szakdoga.Model.ComplexTypes.PasswordHelper">
+    <Position X="4.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ComplexTypes\PasswordHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
